@@ -1,0 +1,690 @@
+\documentclass[10pt]{article}
+
+\usepackage[left=3.0cm, right=3.0cm, top=3.0cm, bottom=1.0cm, paperheight=52.5cm]{geometry} % custom page height
+
+\usepackage[american]{babel}
+\usepackage[latin1]{inputenc}
+
+\usepackage{microtype}
+
+\usepackage{cmap}
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage[breaklinks]{hyperref}
+
+\usepackage{color}
+\definecolor{B3B3B3}{rgb}{0.7, 0.7, 0.7}
+\definecolor{E6E6E6}{rgb}{0.9, 0.9, 0.9}
+
+\usepackage{array}
+\newcolumntype{A}{
+	>{\raggedleft}m{3.4cm}
+}
+\newcolumntype{B}{
+	m{11.2cm}
+}
+\newcolumntype{C}{
+	>{\raggedleft}p{3.4cm}
+}
+\newcolumntype{D}{
+	p{11.2cm}
+}
+\newcolumntype{E}{
+	>{\raggedleft}m{2.4cm}
+}
+\newcolumntype{F}{
+	m{7.9cm}
+}
+\newcolumntype{Y}{
+	!{\color{E6E6E6} \vrule width 0.01cm} !{\color{E6E6E6} \vrule width 0.01cm}
+}
+\newcolumntype{Z}{
+	!{\color{B3B3B3} \vrule width 0.02cm}
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\chead{\textls[200]{\normalsize \textsc{Simon Niklaus} $\cdot$ \textsc{Computer Vision and Deep Learning} \linebreak \footnotesize \textsc{sniklaus.com} $\cdot$ \textsc{mail@sniklaus.com} $\cdot$ \textsc{github.com/sniklaus} $\cdot$ \textsc{January, 2023}}}
+\cfoot{} % remove page numbering
+\renewcommand{\headrule}{}
+\renewcommand{\footrule}{}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\vspace*{-0.8cm}
+
+\section*{Publications}
+\vspace{-0.3cm}
+{\color{E6E6E6} \hrule height 0.04cm}
+\vspace{0.4cm}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{C Z D}
+	{
+		01.2023
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize WACV}
+	}
+	&
+	{
+		{\bf Splatting-based Synthesis for Video Frame Interpolation}
+		
+		\vspace{0.00cm}
+		
+		{\scriptsize Simon Niklaus, Ping Hu, and Jiawen Chen}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		01.2021
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize WACV}
+	}
+	&
+	{
+		{\bf Revisiting Adaptive Convolutions for Video Frame Interpolation}
+		
+		\vspace{0.00cm}
+		
+		{\scriptsize Simon Niklaus, Long Mai, and Oliver Wang}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		01.2021
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize WACV}
+	}
+	&
+	{
+		{\bf Learned Dual-View Reflection Removal}
+		
+		\vspace{0.00cm}
+		
+		{\scriptsize S. Niklaus, X. Zhang, J. T. Barron, N. Wadhwa, R. Garg, F. Liu, and T. Xue}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		06.2020
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize CVPR}
+	}
+	&
+	{
+		{\bf Softmax Splatting for Video Frame Interpolation}
+		
+		\vspace{0.00cm}
+		
+		{\scriptsize Simon Niklaus, and Feng Liu}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		11.2019
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize TOG}
+	}
+	&
+	{
+		{\bf 3D Ken Burns Effect from a Single Image}
+		
+		\vspace{0.00cm}
+		
+		{\scriptsize Simon Niklaus, Long Mai, Jimei Yang, and Feng Liu}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it ACM Transactions on Graphics}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		06.2018
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize CVPR}
+	}
+	&
+	{
+		{\bf Context-aware Synthesis for Video Frame Interpolation}
+		
+		\vspace{0.00cm}
+		
+		{\scriptsize Simon Niklaus, and Feng Liu}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		10.2017
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize ICCV}
+	}
+	&
+	{
+		{\bf Video Frame Interpolation via Adaptive Separable Convolution}
+		
+		\vspace{0.00cm}
+		
+		{\scriptsize Simon Niklaus, Long Mai, and Feng Liu}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it IEEE International Conference on Computer Vision}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		07.2017
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize CVPR}
+	}
+	&
+	{
+		{\bf Video Frame Interpolation via Adaptive Convolution}
+		
+		\vspace{0.00cm}
+		
+		{\scriptsize Simon Niklaus, Long Mai, and Feng Liu}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
+	}
+	\\
+\end{tabular}
+
+\section*{Work Experience}
+\vspace{-0.3cm}
+{\color{E6E6E6} \hrule height 0.04cm}
+\vspace{0.4cm}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{C Z D}
+	{
+		12.2019 - Present
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Research Scientist}
+	}
+	&
+	{	
+		{\bf Adobe} {\scriptsize in San Jose}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Investigating new algorithms related to novel view synthesis using deep learning.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		07.2019 - 11.2019
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Research Intern}
+	}
+	&
+	{	
+		{\bf Google} {\scriptsize in Mountain View}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Investigated the use of dual views for learning-based reflection removal.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		03.2018 - 06.2019
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Research Intern}
+	}
+	&
+	{	
+		{\bf Adobe} {\scriptsize in San Jose}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Created the first Moving Stills prototype to synthesize the 3D Ken Burns effect.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		10.2012 - 03.2013
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize \parbox{4.0cm}{Software Engineering Intern}}
+	}
+	&
+	{	
+		{\bf Fresenius} {\scriptsize in Schweinfurt}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Created a monitoring and analysis tool for debugging embedded multiprocessor systems.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		09.2011 - 02.2012
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize \parbox{4.0cm}{Software Engineering Intern}}
+	}
+	&
+	{	
+		{\bf Fraunhofer} {\scriptsize in N{\"u}rnberg}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Created a monitoring tool for Android and iOS to analyze embedded environments.}
+	}
+	\\
+\end{tabular}
+
+\section*{Academic Record}
+\vspace{-0.3cm}
+{\color{E6E6E6} \hrule height 0.04cm}
+\vspace{0.4cm}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{C Z D}
+	{
+		09.2015 - 03.2020
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Doctor of Philosophy}
+		
+		{\scriptsize Computer Science}
+	}
+	&
+	{
+		{\bf Portland State University} {\scriptsize with a 4.0 GPA}
+		
+		\vspace{0.05cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Adviser
+			}
+			&
+			{
+				\scriptsize Feng Liu
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.2cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Thesis
+			}
+			&
+			{
+				\scriptsize \it Novel View Synthesis in Time and Space
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.2cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Instructor
+			}
+			&
+			{
+				\scriptsize CS 510 - Intro to Visual Computing \newline
+				\scriptsize CS 542 - Advanced Artificial Intelligence \newline
+				\scriptsize CS 565 - Full Stack Web Development
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.2cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Google Sum- \linebreak mer of Code
+			}
+			&
+			{
+				\scriptsize 2017 - Organization Admin for Portland State University \newline
+				\scriptsize 2016 - Student Mentor for Portland State University
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		03.2014 - 03.2015
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Master of Science}
+		
+		{\scriptsize Computer Science}
+	}
+	&
+	{
+		{\bf Portland State University} {\scriptsize with a 4.0 GPA}
+		
+		\vspace{0.05cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Adviser
+			}
+			&
+			{
+				\scriptsize Bart Massey
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.2cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Teaching \linebreak
+				\scriptsize \bf Assistant
+			}
+			&
+			{
+				\scriptsize CS 684 - Algorithm Design and Analysis \newline
+				\scriptsize CS 399 - Special Studies / New Beginnings \newline
+				\scriptsize CS 201 - Computer Systems Programming
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		03.2013 - 03.2016
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Master of Science}
+		
+		{\scriptsize Information Systems}
+	}
+	&
+	{
+		{\bf University of Applied Sciences W{\"u}rzburg} {\scriptsize with a 4.0 GPA}
+		
+		\vspace{0.05cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Adviser
+			}
+			&
+			{
+				\scriptsize Frank Deinzer
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.2cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Thesis
+			}
+			&
+			{
+				\scriptsize \it Image Fusion for Novel View Synthesis
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		10.2009 - 03.2013
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Bachelor of Engineering}
+		
+		{\scriptsize Computer Science}
+	}
+	&
+	{
+		{\bf University of Applied Sciences W{\"u}rzburg} {\scriptsize with a 4.0 GPA}
+		
+		\vspace{0.05cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Adviser
+			}
+			&
+			{
+				\scriptsize Eberhard Grötsch
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.2cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Thesis
+			}
+			&
+			{
+				\scriptsize \it Debugging Tools for Embedded Multiprocessor Systems
+			}
+			\\
+		\end{tabular}
+		
+		\vspace{0.2cm}
+		
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{E Y F}
+			{
+				\scriptsize \bf Junior \linebreak
+				\scriptsize \bf Assistant
+			}
+			&
+			{
+				\scriptsize CS 17 - Introduction to Databases \newline
+				\scriptsize CS 12 - Languages and Compiler Design \newline
+				\scriptsize CS 10 - Algorithms and Data Structures \newline
+				\scriptsize CS 06 - Introduction to Computer Science
+			}
+			\\
+		\end{tabular}
+	}
+\end{tabular}
+
+\section*{Honors and Awards}
+\vspace{-0.3cm}
+{\color{E6E6E6} \hrule height 0.04cm}
+\vspace{0.4cm}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{C Z D}
+	{
+		09.2018 - 09.2019
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Fellowship - \(27000\) Dollar}
+	}
+	&
+	{
+		{\bf Maseeh Fellowship} {\scriptsize at PSU}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Awarded to outstanding graduate students in the college.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		09.2017 - 09.2018
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Award - \(7500\) Dollar}
+	}
+	&
+	{
+		{\bf Laurels Graduate Award} {\scriptsize at PSU} % {\scriptsize based on academic merit}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it An award to competitively selected, academically meritorious graduate students.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		07.2017
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Award - \(400\) Dollar}
+	}
+	&
+	{
+		{\bf Marie Brown Travel Award} {\scriptsize at PSU}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it A travel stipend to recognize outstanding work of graduate degree students.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		03.2011 - 03.2015
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Fellowship - \(14400\) Euro}
+	}
+	&
+	{
+		{\bf Deutschlandstipendium} {\scriptsize at FHWS}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it A monthly financial support to high achieving students based on academic merit.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		03.2013
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Award - \(600\) Euro}
+	}
+	&
+	{
+		{\bf Wolfgang Maria Fischer Award} {\scriptsize at FHWS}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it A monetary honor awarded to the best graduates in computer science.}
+	}
+	\\
+\end{tabular}
+
+\section*{Community Service}
+\vspace{-0.3cm}
+{\color{E6E6E6} \hrule height 0.04cm}
+\vspace{0.4cm}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{C Z D}
+	{
+		09.2007 - 03.2014
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Volunteering}
+	}
+	&
+	{
+		{\bf Lifeguard at the Wasserwacht} {\scriptsize in Schweinfurt}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it A voluntary lifeguard service that is part of the German Red Cross.}
+	}
+	\\
+\end{tabular}
+
+\end{document}
