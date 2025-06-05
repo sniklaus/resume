@@ -1,6 +1,6 @@
 \documentclass[10pt]{article}
 
-\usepackage[left=3.0cm, right=3.0cm, top=3.0cm, bottom=1.0cm, paperheight=76.0cm]{geometry} % custom page height
+\usepackage[left=3.0cm, right=3.0cm, top=3.0cm, bottom=1.0cm, paperheight=54.0cm]{geometry} % custom page height
 
 \usepackage[american]{babel}
 \usepackage[latin1]{inputenc}
@@ -45,7 +45,7 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\chead{\textls[200]{\normalsize \textsc{Simon Niklaus} $\cdot$ \textsc{Computer Vision and Deep Learning} \linebreak \footnotesize \textsc{sniklaus.com} $\cdot$ \textsc{mail@sniklaus.com} $\cdot$ \textsc{March, 2025}}}
+\chead{\textls[200]{\normalsize \textsc{Simon Niklaus} $\cdot$ \textsc{Staff Research Scientist} \linebreak \footnotesize \textsc{sniklaus.com} $\cdot$ \textsc{mail@sniklaus.com} $\cdot$ \textsc{May, 2025}}}
 \cfoot{} % remove page numbering
 \renewcommand{\headrule}{}
 \renewcommand{\footrule}{}
@@ -55,6 +55,288 @@
 \begin{document}
 
 \vspace*{-0.8cm}
+
+% \section*{Selected Technology}
+% \vspace{-0.3cm}
+% {\color{E6E6E6} \hrule height 0.04cm}
+% \vspace{0.4cm}
+% \renewcommand{\arraystretch}{1.0}
+% \begin{tabular}{C Z >{\setlength{\baselineskip}{0.9\baselineskip}}D}
+% 	{
+% 		10.2024
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Prototype}
+% 	}
+% 	&
+% 	{
+% 		{\bf Clean Machine} - \href{https://sniklaus.com/cleanmachine}{sniklaus.com/cleanmachine}
+% 		
+% 		\vspace{0.00cm}
+% 		
+% 		{\scriptsize Imagine being the videographer at a wedding, and the photographer is extensively using their flash. This will lead to overexposed frames in the video which severely degrades the captured footage, but Clean Machine is here to help.}
+% 		
+% 		\vspace{0.0cm}
+% 	}
+% 	\\
+% 	{
+% 		10.2024
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Lightroom}
+% 	}
+% 	&
+% 	{
+% 		{\bf Image Denoising} - \href{https://sniklaus.com/imdenoise}{sniklaus.com/imdenoise}
+% 		
+% 		\vspace{0.00cm}
+% 		
+% 		{\scriptsize We have recently introduced a new denosier in Lightroom that was pioneered by Michael Gharbi before he left Adobe to found a startup. Since then, Zhihao Xia and I have been the research leads behind this technology.}
+% 		
+% 		\vspace{0.0cm}
+% 	}
+% 	\\
+% 	{
+% 		10.2024
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Illustrator}
+% 	}
+% 	&
+% 	{
+% 		{\bf 3D Mockup} - \href{https://sniklaus.com/mockup}{sniklaus.com/mockup}
+% 		
+% 		\vspace{0.00cm}
+% 		
+% 		{\scriptsize A common task for creative professionals is to mockup a design onto an object. This can challenging though, imagine putting a logo onto a t-shirt. Fortunately, we can analyze the 3D structure of the target image and automate this process.}
+% 		
+% 		\vspace{0.0cm}
+% 	}
+% 	\\
+% 	{
+% 		10.2024
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Lightroom}
+% 	}
+% 	&
+% 	{
+% 		{\bf Sky Segmentation} - \href{https://sniklaus.com/skyseg}{sniklaus.com/skyseg}
+% 		
+% 		\vspace{0.00cm}
+% 		
+% 		{\scriptsize Sky segmentation is a core feature in many creative tools, for example to adjust the saturation of the sky separately from the rest. Shipping a sky segmentor across multiple platforms, from mobile to the desktop, is pretty tricky though.}
+% 		
+% 		\vspace{0.0cm}
+% 	}
+% 	\\
+% 	{
+% 		09.2024
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Firefly}
+% 	}
+% 	&
+% 	{
+% 		{\bf Firefly Video} - \href{https://sniklaus.com/firevideo}{sniklaus.com/firevideo}
+% 		
+% 		\vspace{0.00cm}
+% 		
+% 		{\scriptsize After being one of the founders and key figures behind Adobe Firefly, I have been busy working on a foundational video model in a team led by Jianming Zhang. Like before, I have been in charge of the image data pipeline.}
+% 		
+% 		\vspace{0.0cm}
+% 	}
+% 	\\
+% 	{
+% 		05.2024
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Lightroom}
+% 	}
+% 	&
+% 	{
+% 		{\bf Lens Blur} - \href{https://sniklaus.com/lensblur}{sniklaus.com/lensblur}
+% 		
+% 		\vspace{0.00cm}
+% 		
+% 		{\scriptsize Bokeh is an artistic tool that allows photographers to guide attention. This typically requires large and often expensive lenses, but we can also just synthesize this effect on imagery with a shallow depth of field by simulating the underlying physics.}
+% 		
+% 		\vspace{0.0cm}
+% 	}
+% 	\\
+% 	{
+% 		04.2024
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Firefly}
+% 	}
+% 	&
+% 	{
+% 		{\bf Structure Reference} - \href{https://sniklaus.com/strucref}{sniklaus.com/strucref}
+% 		
+% 		\vspace{0.00cm}
+% 		
+% 		{\scriptsize One key ingredient for text-to-image applications is controllability, and we have recently announced Structure Reference as a form of user control. It conditions the text-to-image synthesis guided by the estimated depth of a reference image.}
+% 		
+% 		\vspace{0.0cm}
+% 	}
+% 	\\
+% 	{
+% 		03.2023
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Firefly}
+% 	}
+% 	&
+% 	{
+% 		{\bf Adobe Firefly} - \href{https://sniklaus.com/firefly}{sniklaus.com/firefly}
+% 		
+% 		\vspace{0.00cm}
+% 		
+% 		{\scriptsize Together with Oliver Wang, Tobias Hinz, Cynthia Liu, and Kevin Matzen, I was one of the founding members of a project that later became known as Adobe Firefly. Specifically, I was in charge of anything data from data curation to data loading.}
+% 		
+% 		\vspace{0.0cm}
+% 	}
+% 	\\
+% 	{
+% 		10.2021
+% 		
+% 		\vspace{-0.05cm}
+% 		
+% 		{\scriptsize Prototype}
+% 	}
+% 	&
+% 	{
+% 		{\bf Project Inbetween} - \href{https://sniklaus.com/inbetween}{sniklaus.com/inbetween}
+% 		
+% 		\vspace{0.00cm}
+% 
+% 		{\scriptsize Being able to take pictures at a whim has left me with collections where many photos look alike. Given similar images, could we animate a transition between them to help us cherish past moments? This is what Project Inbetween is about.}
+% 	}
+% 	\\
+% \end{tabular}
+
+\section*{Work Experience}
+\vspace{-0.3cm}
+{\color{E6E6E6} \hrule height 0.04cm}
+\vspace{0.4cm}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{C Z D}
+	{
+		05.2025 - Present
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Staff Research Scientist}
+	}
+	&
+	{	
+		{\bf Google} {\scriptsize in Washington (Remote)}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Working on GenAI data at Google DeepMind.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		12.2019 - 05.2025
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Senior Research Scientist}
+	}
+	&
+	{	
+		{\bf Adobe} {\scriptsize in Washington (Remote)}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it One of the five founders of Firefly where I defined our data landscape, shipped Image Denoising and Lens Blur and Sky Segmentation in Lightroom, shipped Mockup in Illustrator, shipped Structure Reference in Firefly, demoed Clean Machine and Project Inbetween and Moving Stills at the MAX conference.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		07.2019 - 11.2019
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Research Intern}
+	}
+	&
+	{	
+		{\bf Google} {\scriptsize in Mountain View}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Created a prototype that uses dual views for effective reflection removal.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		03.2018 - 06.2019
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Research Intern}
+	}
+	&
+	{	
+		{\bf Adobe} {\scriptsize in San Jose}
+
+		\vspace{0.05cm}
+
+		{\scriptsize \it Created the Moving Stills prototype to synthesize the 3D Ken Burns effect.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		10.2012 - 03.2013
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Engineering Intern}
+	}
+	&
+	{	
+		{\bf Fresenius} {\scriptsize in Schweinfurt}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Created a monitoring and analysis tool for debugging embedded multiprocessor systems.}
+		
+		\vspace{0.0cm}
+	}
+	\\
+	{
+		09.2011 - 02.2012
+		
+		\vspace{-0.05cm}
+		
+		{\scriptsize Engineering Intern}
+	}
+	&
+	{	
+		{\bf Fraunhofer} {\scriptsize in N{\"u}rnberg}
+		
+		\vspace{0.05cm}
+		
+		{\scriptsize \it Created a monitoring tool for Android and iOS to analyze embedded environments.}
+	}
+	\\
+\end{tabular}
 
 \section*{Professional Services}
 \vspace{-0.3cm}
@@ -67,175 +349,17 @@
 	}
 	&
 	{
-		{ICCV 2025, CVPR 2025, ECCV 2024}
-	}
-	\\
-\end{tabular}
+		{1$\hspace{0.02cm}\times\hspace{0.02cm}$CVPR, 1$\hspace{0.02cm}\times\hspace{0.02cm}$ICCV, 1$\hspace{0.02cm}\times\hspace{0.02cm}$ECCV}
 
-\section*{Selected Technology}
-\vspace{-0.3cm}
-{\color{E6E6E6} \hrule height 0.04cm}
-\vspace{0.4cm}
-\renewcommand{\arraystretch}{1.0}
-\begin{tabular}{C Z >{\setlength{\baselineskip}{0.9\baselineskip}}D}
-	{
-		10.2024
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Prototype}
-	}
-	&
-	{
-		{\bf Clean Machine} - \href{https://sniklaus.com/cleanmachine}{sniklaus.com/cleanmachine}
-		
-		\vspace{0.00cm}
-		
-		{\scriptsize Imagine being the videographer at a wedding, and the photographer is extensively using their flash. This will lead to overexposed frames in the video which severely degrades the captured footage, but Clean Machine is here to help.}
-		
 		\vspace{0.0cm}
 	}
 	\\
 	{
-		10.2024
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Lightroom}
+		Reviewer
 	}
 	&
 	{
-		{\bf Image Denoising} - \href{https://sniklaus.com/imdenoise}{sniklaus.com/imdenoise}
-		
-		\vspace{0.00cm}
-		
-		{\scriptsize We have recently introduced a new denosier in Lightroom that was pioneered by Michael Gharbi before he left Adobe to found a startup. Since then, Zhihao Xia and I have been the research leads behind this technology.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		10.2024
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Illustrator}
-	}
-	&
-	{
-		{\bf 3D Mockup} - \href{https://sniklaus.com/mockup}{sniklaus.com/mockup}
-		
-		\vspace{0.00cm}
-		
-		{\scriptsize A common task for creative professionals is to mockup a design onto an object. This can challenging though, imagine putting a logo onto a t-shirt. Fortunately, we can analyze the 3D structure of the target image and automate this process.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		10.2024
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Lightroom}
-	}
-	&
-	{
-		{\bf Sky Segmentation} - \href{https://sniklaus.com/skyseg}{sniklaus.com/skyseg}
-		
-		\vspace{0.00cm}
-		
-		{\scriptsize Sky segmentation is a core feature in many creative tools, for example to adjust the saturation of the sky separately from the rest. Shipping a sky segmentor across multiple platforms, from mobile to the desktop, is pretty tricky though.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		09.2024
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Firefly}
-	}
-	&
-	{
-		{\bf Firefly Video} - \href{https://sniklaus.com/firevideo}{sniklaus.com/firevideo}
-		
-		\vspace{0.00cm}
-		
-		{\scriptsize After being one of the founders and key figures behind Adobe Firefly, I have been busy working on a foundational video model in a team led by Jianming Zhang. Like before, I have been in charge of the image data pipeline.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		05.2024
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Lightroom}
-	}
-	&
-	{
-		{\bf Lens Blur} - \href{https://sniklaus.com/lensblur}{sniklaus.com/lensblur}
-		
-		\vspace{0.00cm}
-		
-		{\scriptsize Bokeh is an artistic tool that allows photographers to guide attention. This typically requires large and often expensive lenses, but we can also just synthesize this effect on imagery with a shallow depth of field by simulating the underlying physics.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		04.2024
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Firefly}
-	}
-	&
-	{
-		{\bf Structure Reference} - \href{https://sniklaus.com/strucref}{sniklaus.com/strucref}
-		
-		\vspace{0.00cm}
-		
-		{\scriptsize One key ingredient for text-to-image applications is controllability, and we have recently announced Structure Reference as a form of user control. It conditions the text-to-image synthesis guided by the estimated depth of a reference image.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		03.2023
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Firefly}
-	}
-	&
-	{
-		{\bf Adobe Firefly} - \href{https://sniklaus.com/firefly}{sniklaus.com/firefly}
-		
-		\vspace{0.00cm}
-		
-		{\scriptsize Together with Oliver Wang, Tobias Hinz, Cynthia Liu, and Kevin Matzen, I was one of the founding members of a project that later became known as Adobe Firefly. Specifically, I was in charge of anything data from data curation to data loading.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		10.2021
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Prototype}
-	}
-	&
-	{
-		{\bf Project Inbetween} - \href{https://sniklaus.com/inbetween}{sniklaus.com/inbetween}
-		
-		\vspace{0.00cm}
-
-		{\scriptsize Being able to take pictures at a whim has left me with collections where many photos look alike. Given similar images, could we animate a transition between them to help us cherish past moments? This is what Project Inbetween is about.}
+		{4$\hspace{0.02cm}\times\hspace{0.02cm}$CVPR, 2$\hspace{0.02cm}\times\hspace{0.02cm}$ICCV, 2$\hspace{0.02cm}\times\hspace{0.02cm}$ECCV, 2$\hspace{0.02cm}\times\hspace{0.02cm}$WACV, 5$\hspace{0.02cm}\times\hspace{0.02cm}$TOG, 1$\hspace{0.02cm}\times\hspace{0.02cm}$IJCV, 1$\hspace{0.02cm}\times\hspace{0.02cm}$PAMI}
 	}
 	\\
 \end{tabular}
@@ -261,9 +385,9 @@
 		
 		{\scriptsize X. Jin, S. Niklaus, Z. Zhang, Z. Xia, C. L. Guo, Y. Yang, J. Chen, and C. Li}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
 		
 		\vspace{0.0cm}
 	}
@@ -301,9 +425,9 @@
 		
 		{\scriptsize Simon Niklaus, Ping Hu, and Jiawen Chen}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
 		
 		\vspace{0.0cm}
 	}
@@ -323,9 +447,9 @@
 		
 		{\scriptsize Simon Niklaus, Long Mai, and Oliver Wang}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
 		
 		\vspace{0.0cm}
 	}
@@ -345,9 +469,9 @@
 		
 		{\scriptsize S. Niklaus, X. Zhang, J. T. Barron, N. Wadhwa, R. Garg, F. Liu, and T. Xue}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it IEEE Winter Conference on Applications of Computer Vision}
 		
 		\vspace{0.0cm}
 	}
@@ -367,9 +491,9 @@
 		
 		{\scriptsize Simon Niklaus, and Feng Liu}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
 		
 		\vspace{0.0cm}
 	}
@@ -389,9 +513,9 @@
 		
 		{\scriptsize Simon Niklaus, Long Mai, Jimei Yang, and Feng Liu}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it ACM Transactions on Graphics}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it ACM Transactions on Graphics}
 		
 		\vspace{0.0cm}
 	}
@@ -411,9 +535,9 @@
 		
 		{\scriptsize Simon Niklaus, and Feng Liu}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
 		
 		\vspace{0.0cm}
 	}
@@ -433,9 +557,9 @@
 		
 		{\scriptsize Simon Niklaus, Long Mai, and Feng Liu}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it IEEE International Conference on Computer Vision}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it IEEE International Conference on Computer Vision}
 		
 		\vspace{0.0cm}
 	}
@@ -455,105 +579,9 @@
 		
 		{\scriptsize Simon Niklaus, Long Mai, and Feng Liu}
 		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
-	}
-	\\
-\end{tabular}
-
-\section*{Work Experience}
-\vspace{-0.3cm}
-{\color{E6E6E6} \hrule height 0.04cm}
-\vspace{0.4cm}
-\renewcommand{\arraystretch}{1.0}
-\begin{tabular}{C Z D}
-	{
-		12.2019 - Present
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Senior Research Scientist}
-	}
-	&
-	{	
-		{\bf Adobe} {\scriptsize in San Jose}
-		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it Investigating new algorithms related to novel view synthesis using deep learning.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		07.2019 - 11.2019
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Research Intern}
-	}
-	&
-	{	
-		{\bf Google} {\scriptsize in Mountain View}
-		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it Investigated the use of dual views for learning-based reflection removal.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		03.2018 - 06.2019
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Research Intern}
-	}
-	&
-	{	
-		{\bf Adobe} {\scriptsize in San Jose}
-		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it Created the first Moving Stills prototype to synthesize the 3D Ken Burns effect.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		10.2012 - 03.2013
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Engineering Intern}
-	}
-	&
-	{	
-		{\bf Fresenius} {\scriptsize in Schweinfurt}
-		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it Created a monitoring and analysis tool for debugging embedded multiprocessor systems.}
-		
-		\vspace{0.0cm}
-	}
-	\\
-	{
-		09.2011 - 02.2012
-		
-		\vspace{-0.05cm}
-		
-		{\scriptsize Engineering Intern}
-	}
-	&
-	{	
-		{\bf Fraunhofer} {\scriptsize in N{\"u}rnberg}
-		
-		\vspace{0.05cm}
-		
-		{\scriptsize \it Created a monitoring tool for Android and iOS to analyze embedded environments.}
+%		\vspace{0.05cm}
+%		
+%		{\scriptsize \it IEEE Conference on Computer Vision and Pattern Recognition}
 	}
 	\\
 \end{tabular}
